@@ -4,7 +4,8 @@ public class _03Conversao {
 
 
 	    public static void main(String[] args) {
-	    	  float pontoFlutuante = 3.14f;
+	    	  @SuppressWarnings("unused")
+			float pontoFlutuante = 3.14f;
 
 	          double salario = 1270.50;
 	          int valor = (int) salario;

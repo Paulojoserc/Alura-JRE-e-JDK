@@ -1,28 +1,25 @@
 package condicionais;
 
 public class _03Escopo {
-	public static void main(String[] args) {
-        System.out.println("testando condicionais");
+	  public static void main(String[] args){
+          System.out.println("testando condicionais");
 
-        int idade = 20;
-        int quantidadePessoas = 3;
+          int idade = 20;
+          int quantidadePessoas = 3;    
+          boolean acompanhado;
 
-        // boolean acompanhado = quantidadePessoas >= 2;
+          if (quantidadePessoas >= 2) {
+              acompanhado = true;
+          }else {
+              acompanhado = false;
+          }
 
-        boolean acompanhado;
+          if (idade >=18 || acompanhado){
 
-        if (quantidadePessoas >= 2) {
-            acompanhado = true;
-        } else {
-            acompanhado = false;
-        }
+              System.out.println("Seja bem vindo"); 
+          } else {
+              System.out.println("infelizmente voce nao pode entrar");
+      }
 
-        System.out.println("valor de acompanhado = " + acompanhado);
-
-        if (idade >= 18 && acompanhado) {
-            System.out.println("seja bem vindo");
-        } else {
-            System.out.println("infelizmente você não pode entrar");
-        }
-    }
+  }
 }
